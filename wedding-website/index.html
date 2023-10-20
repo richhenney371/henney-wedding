@@ -17,28 +17,37 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-dusky-blue h-full flex items-center justify-center">
+<body>
 
-    <section class="mt-16 flex items-center justify-center">
+    <section class="py-16 bg-dusky-blue">
 
         <div class="container max-w-screen-xl mx-auto px-4">
 
-            <header class="flex flex-col lg:flex-row justify-between lg:gap-5">
-                <div class="flex flex-col justify-center text-center lg:text-left mb-5 lg:mb-0">
+            <header class="flex flex-col lg:flex-row justify-between lg:gap-8">
+                <div class="flex flex-col justify-center text-center lg:text-left mb-20 lg:mb-0">
                     <div class="flex items-center justify-center lg:justify-start gap-2 mb-3">
                         <span class="w-20 h-0.5 bg-white"></span>
 
-                        <p class="font-serif font-medium text-white text-5xl lg:text-7xl">She said yes!</p>
+                        <p class="font-serif font-medium text-white text-4xl lg:text-7xl">She said yes!</p>
                     </div>
 
-                    <h1 class="font-sans font-bold text-white text-4xl md:text-4xl xl:text-5xl mb-3">We are so excited
+                    <h1 class="font-sans font-bold text-white text-4xl md:text-6xl xl:text-5xl mb-3">We are so excited
                         to celebrate with you!
                     </h1>
 
                     <p class="font-normal text-white text-lg mb-8">
-                        We'll share details early 2023.
+                        Find all the details you need to know about our big day.
                     </p>
 
+                    <div class="space-y-5 lg:space-x-5 mb-10 mt-2">
+                        <a href="https://sayi.do/henneywedding/rsvp" target="_blank"
+                            class="block md:inline px-32 py-5 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">RSVP</a>
+                    </div>
+
+                    <hr class="text-gray-500 mb-5">
+
+                    <span class="font-normal text-white">Please RSVP by <span class="font-bold">26 September
+                            2024</span></span>
                 </div>
 
                 <div class="mx-auto lg:mx-0 lg:max-w-xl">
@@ -51,11 +60,331 @@
 
     </section>
 
+
+    <section class="py-16 bg-white">
+
+        <div class="container max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row justify-between lg:gap-8 gap-10">
+            <div class="mx-auto lg:mx-0 lg:max-w-2xl">
+                <img class="rounded-md shadow" src="./assets/image/the-upper-house.jpeg" akt="The Upper House">
+
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <h3 class="font-sans font-semibold text-gray-800 text-2xl md:text-3xl xl:text-4xl text-left">
+                    <span class="font-serif block text-4xl mb-5">We're getting married at</span> The Upper House.<br>The
+                    Green, Barlaston<br> Stoke-on-Trent, Staffordshire
+                    <br>ST12 9AE
+                </h3>
+                <div class="space-y-5 lg:space-x-5 mb-10 mt-6">
+                    <a href="https://www.google.com/maps/dir//The+Green,+Barlaston,+Stoke-on-Trent+ST12+9AE/@52.9394887,-2.2279149,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x487a6ed2c0cd7a2d:0x771dfb129040057e!2m2!1d-2.1578753!2d52.9394058!3e0"
+                        target="_blank"
+                        class="block px-32 py-5 font-medium bg-indigo-800 text-white text-center text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">Get
+                        Directions</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-16 bg-dark-blue mb-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4 flex justify-center">
+
+
+            <div class="flex flex-col justify-center items-center">
+                <h3 class="font-sans font-semibold text-white text-2xl md:text-3xl xl:text-5xl text-center">
+                    <span class="font-serif block text-4xl mb-2">Save the date</span>26 October 2024
+                </h3>
+                <div class="space-y-5 lg:space-x-5 mt-6">
+                    <a title="Add to Calendar"
+                        class="addeventatc block px-32 py-5 font-medium bg-white text-gray-800 text-center text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300"
+                        data-id="OT15426171" href="https://www.addevent.com/event/OT15426171" target="_blank">Add to
+                        Calendar</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="lg:mb-20">
+        <div class="container max-w-screen-xl mx-auto px-4 flex flex-wrap justify-center">
+            <div>
+
+                <h3 class="font-sans font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center">
+                    Questions?
+                </h3>
+                <div class="bg-white max-w-4xl mx-auto border border-gray-200 mt-6" x-data="{selected:1}">
+                    <ul class="shadow-box">
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 1 ? selected = 1 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        When is the RSVP deadline? </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container1"
+                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>Please RSVP no later than <strong>26 September 2024</strong>, so we can have an
+                                        accurate headcount.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 2 ? selected = 2 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Can I bring someone? </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container2"
+                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>Our wedding is strictly RSVP only. We will only be able to accommodate those
+                                        listed on your invitation. Please check your invite for your +1. Get in touch
+                                        with us if you would like to discuss options.</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 3 ? selected = 3 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Is the wedding indoors or outdoors? </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container3"
+                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>Our wedding ceremony will be indoors, inside The Upper House's Orangery.</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 4 ? selected = 4 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Is it okay to take pictures with our phones and cameras during the wedding?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container4"
+                                x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>We are having an 'unplugged ceremony' so we would greatly appreciate you leaving
+                                        the photo snapping to the experts! We would love for you to take photos after
+                                        the ceremony. There will be a videographer on-site, recording
+                                        our day.</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 5 ? selected = 5 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Is there accommodation available?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container5"
+                                x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>The Upper House does opperate as a hotel and there may be rooms available to
+                                        book, subject to availability. We have prioritised family travelling longer
+                                        distances. If you do wish to book a room, you can benefit from
+                                        a £10 discount on your booking by referencing the wedding.</p>
+
+                                    <p>Other accommodation options close to the venue:
+                                    <ul class="px-5 my-5 flex flex-col gap-2">
+                                        <li class="list-disc"><a target="_blank" class="underline"
+                                                href="https://www.premierinn.com/gb/en/hotels/england/staffordshire/stoke-on-trent/stoketrentham-gardens.html?cid=GLBC_STOTRE">Premier
+                                                Inn - Trentham Gardens (10 min by car)</a></li>
+                                        <li class="list-disc"><a target="_blank" class="underline"
+                                                href="https://www.travelodge.co.uk/hotels/486/Stoke-on-Trent-Trentham-hotel">Travelodge
+                                                - Trentham (10 min by car)</a></li>
+                                        <li class="list-disc"><a target="_blank" class="underline"
+                                                href="https://www.hilton.com/en/hotels/manstgi-hilton-garden-inn-stoke-on-trent/">Hilton
+                                                Garden Inn - Hanley Stoke on Trent (20 min by car)</a></li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 6 ? selected = 6 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        What is the dress code? What should I wear?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container6"
+                                x-bind:style="selected == 6 ? 'max-height: ' + $refs.container6.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>Formal attire please! For example, gentlemen please wear a suit, shirt and tie.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 7 ? selected = 7 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        What time should I arrive?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container7"
+                                x-bind:style="selected == 7 ? 'max-height: ' + $refs.container7.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>We recommend that you arrive 45 minutes to 1 hour before the start of the
+                                        ceremony to ensure we keep to the schedule! Our ceremony is set to begin at 2pm.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="relative border-b border-gray-200">
+
+                            <button type="button" class="w-full px-8 py-6 text-left"
+                                @click="selected !== 8 ? selected = 8 : selected = null">
+                                <div class="flex items-center justify-between">
+                                    <span>
+                                        Do you have a gift list/registry?
+                                    </span>
+                                    <span class="ico-plus"></span>
+                                </div>
+                            </button>
+
+                            <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                                x-ref="container8"
+                                x-bind:style="selected == 8 ? 'max-height: ' + $refs.container8.scrollHeight + 'px' : ''">
+                                <div class="p-6">
+                                    <p>Your company on our wedding day is the most important thing to us! If you do wish
+                                        to celebrate with a gift, a contribution towards our
+                                        <em>'henneymoon'</em> fund would be greatly appreciated!
+                                    </p>
+                                    <a href="https://app.collectionpot.com/pot/3129537/" target="_blank"
+                                        class="block mt-5 mb-5 px-32 py-5 font-medium bg-indigo-800 text-white text-center text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300">Send
+                                        a gift (thank you!)</a>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container max-w-screen-xl mx-auto px-4 flex flex-wrap justify-center">
+        <div class="mb-32 text-white text-center md:text-left">
+            <div class="block rounded-lg shadow-lg bg-dark-blue">
+                <div class="flex flex-wrap items-center">
+                    <div class="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
+                        <img src="./assets/image/katie-ring.jpg" alt="Katie's engagement ring"
+                            class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" />
+                    </div>
+                    <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
+                        <div class="px-6 py-12 md:px-12">
+                            <h3 class="text-3xl font-bold mb-6 pb-2 text-white">Need to contact us?</h3>
+                            <p class="text-white mb-6 pb-2">
+                                If you have any other questions, you can contact Richard or Katie on <strong>07746
+                                    139690</strong> or
+                                <strong>07495 892395</strong>. If you would like to RSVP via email, please contact us at
+                                <a class="underline text-white"
+                                    href="mailto:rsvp@henneywedding.co.uk">rsvp@henneywedding.co.uk</a>.
+                            </p>
+                            <p class="text-white mb-6 pb-2">If you would like us to complete your RSVP on your behalf,
+                                get in touch and we'll sort this for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dusky-blue py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <div class="text-center">
+                <h1 class="font-medium text-white text-2xl md:text-5xl mb-5">#HenneyWedding</h1>
+
+                <p class="font-normal text-white md:text-lg mb-20">Don't forget to use the hash tag when posting
+                    anything related to our wedding on Instagram!
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="py-3 flex items-center justify-center space-x-4 text-sm leading-6 text-slate-700">
+            <a href="https://richardhenney.co.uk" target="_blank">Built by Richard Henney</a>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"
         integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="//instant.page/5.1.1" type="module"
-        integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+    <script src="https://instant.page/5.1.1" type="module"
+        integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 </body>
 
 </html>
