@@ -3,3 +3,8 @@
        url('fonts/Cherolina.woff2') format('woff2');
   font-display: fallback;
 }
+@font-face {
+  font-family: "Libre Baskerville";
+       url('fonts/LibreBaskerville-Regular.woff2') format('woff2');
+  font-display: fallback;
+}
