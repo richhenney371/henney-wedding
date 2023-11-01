@@ -1,0 +1,5 @@
+@media (min-width: 1280px) {
+    .leading-hero {
+        line-height: .3 !important;
+    }
+}
