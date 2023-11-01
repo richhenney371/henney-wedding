@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Cherolina";
     url("assets/fonts/Cherolina.woff2") format('woff2'),
+    url("assets/fonts/Cherolina.woff") format('woff'),
     url('assets/fonts/Cherolina.ttf') format('truetype');
     font-display: fallback;
 }
