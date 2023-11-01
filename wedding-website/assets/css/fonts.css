@@ -1,5 +1,5 @@
-@media (min-width: 1280px) {
-    .leading-hero {
-        line-height: .3 !important;
-    }
+@font-face {
+    font-family: "Cherolina";
+    url("assets/fonts/Cherolina.woff2") format('woff2');
+    font-display: fallback;
 }
